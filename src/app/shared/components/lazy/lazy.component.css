@@ -1,0 +1,34 @@
+/* line 1, src/app/shared/components/lazy/lazy.component.scss */
+:host {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+
+/* line 8, src/app/shared/components/lazy/lazy.component.scss */
+.is--center {
+  width: 256px;
+  height: 256px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+/* line 16, src/app/shared/components/lazy/lazy.component.scss */
+.is--center .app__icon {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 19, src/app/shared/components/lazy/lazy.component.scss */
+.is--center .app__icon img {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxhenkuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxnRUFBZ0U7QUFDaEU7RUFDRSxtQkFBbUI7RUFDbkIsWUFBWTtFQUNaLGFBQWE7RUFDYixnQkFBZ0I7Q0FDakI7O0FBRUQsZ0VBQWdFO0FBQ2hFO0VBQ0UsYUFBYTtFQUNiLGNBQWM7RUFDZCxtQkFBbUI7RUFDbkIsU0FBUztFQUNULFVBQVU7RUFDVixxREFBNkM7VUFBN0MsNkNBQTZDO0VBQzdDLDRCQUFvQjtVQUFwQixvQkFBb0I7Q0FDckI7O0FBRUQsaUVBQWlFO0FBQ2pFO0VBQ0UsWUFBWTtFQUNaLGFBQWE7Q0FDZDs7QUFFRCxpRUFBaUU7QUFDakU7RUFDRSxZQUFZO0VBQ1osYUFBYTtDQUNkIiwiZmlsZSI6ImxhenkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIGxpbmUgMSwgc3JjL2FwcC9zaGFyZWQvY29tcG9uZW50cy9sYXp5L2xhenkuY29tcG9uZW50LnNjc3MgKi9cbjpob3N0IHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBiYWNrZ3JvdW5kOiByZWQ7XG59XG5cbi8qIGxpbmUgOCwgc3JjL2FwcC9zaGFyZWQvY29tcG9uZW50cy9sYXp5L2xhenkuY29tcG9uZW50LnNjc3MgKi9cbi5pcy0tY2VudGVyIHtcbiAgd2lkdGg6IDI1NnB4O1xuICBoZWlnaHQ6IDI1NnB4O1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNTAlO1xuICBsZWZ0OiA1MCU7XG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlWCgtNTAlKSB0cmFuc2xhdGVZKC01MCUpO1xuICBwZXJzcGVjdGl2ZTogMTAwMHB4O1xufVxuXG4vKiBsaW5lIDE2LCBzcmMvYXBwL3NoYXJlZC9jb21wb25lbnRzL2xhenkvbGF6eS5jb21wb25lbnQuc2NzcyAqL1xuLmlzLS1jZW50ZXIgLmFwcF9faWNvbiB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG59XG5cbi8qIGxpbmUgMTksIHNyYy9hcHAvc2hhcmVkL2NvbXBvbmVudHMvbGF6eS9sYXp5LmNvbXBvbmVudC5zY3NzICovXG4uaXMtLWNlbnRlciAuYXBwX19pY29uIGltZyB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG59XG4iXX0= */

@@ -1,0 +1,22 @@
+[
+{
+    "path": "lazy",
+    "loadChildren": "shared/components/lazy/lazy.module#LazyModule"
+},
+{
+    "path": "lazy1",
+    "loadChildren": "shared/components/lazy/lazy.module#LazyModule"
+},
+{
+    "path": "lazy2",
+    "loadChildren": "shared/components/lazy/lazy.module#LazyModule"
+},
+{
+    "path": "lazy3",
+    "loadChildren": "shared/components/lazy/lazy.module#LazyModule"
+},
+{
+    "path": "lazy4",
+    "loadChildren": "shared/components/lazy/lazy.module#LazyModule"
+}
+]
