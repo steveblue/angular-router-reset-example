@@ -10,6 +10,8 @@ http://localhost:4200/lazy4
 
 The configured Routes work in JIT, AOT Compiled and bundled with `SIMPLE_OPTIMIZATIONS` but fail with `ADVANCED_OPTIMIZATIONS`. I am wondering if this is an issue with tsickle?
 
+If you change `closure.conf` and `closure.lazy.conf` to SIMPLE_OPTIMIZATIONS the app will load every Route. Click on the logo to go back to / on a /lazy route. The Routes all load the same child.
+
 
 ```
 npm i -g angular-rollup rimraf
@@ -36,7 +38,7 @@ THIS WORKS:
 
 ```
 
-^ In above example ClosureCompiler correctly mangles all properties. Interestingly enough, `children` is not mangled, but `loadChildren` is.
+^ In above example ClosureCompiler correctly mangles all properties. `children` is not mangled, but `loadChildren` is.
 
 
 THIS DOESNT:
@@ -70,7 +72,7 @@ THIS DOESNT:
 
 ```
 
-^ In this example ClosureCompiler correctly mangles all properties except loadChildren. Interestingly enough, `children` is not mangled, and `loadChildren` is not mangled either.
+^ In this example ClosureCompiler correctly mangles all properties except loadChildren. `children` is not mangled, and `loadChildren` is not mangled either.
 
 RESULTS IN THE FOLLOWING ERROR:
 
