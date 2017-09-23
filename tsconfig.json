@@ -7,5 +7,11 @@
     "rootDir": "./src",
     "lib": ["es2015", "dom"],
     "skipLibCheck": true
-  }
+  },
+  "excludes": [
+    "ngfactory",
+    "build",
+    "tmp",
+    "node_modules"
+  ]
 }

@@ -4,8 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './shared/components/home/home.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'lazy', loadChildren: 'shared/components/lazy/lazy.module#LazyModule' }
+  { path: '', component: HomeComponent }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
