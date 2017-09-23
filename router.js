@@ -5,6 +5,14 @@ const router = require('express').Router();
 const compression = require('compression');
 const paths = require('./build.config.js');
 
+function ignoreFavicon(req, res, next) {
+  if (req.originalUrl === '/favicon.ico') {
+    res.status(204).json({ nope: true });
+  } else {
+    next();
+  }
+}
+
 module.exports = function(app) {
   'use strict';
 
@@ -29,17 +37,15 @@ module.exports = function(app) {
 
 
 // ROUTES
+  app.use(ignoreFavicon);
 
   app.use(compression());
 
   app.use('/', express.static(process.cwd() + '/'+paths.build));
 
-
   app.get('*', function (req, res) {
     res.sendFile('index.html', { root: process.cwd() + '/' + paths.build });
   });
-
-  
 
   return router;
 
