@@ -1,10 +1,11 @@
 module.exports = {
     dep: {
         lib: [
-            'core-js',
-            'reflect-metadata',
-            'zone.js',
-            'systemjs',
+            'core-js/client/shim.min.js',
+            'core-js/client/shim.min.js.map',
+            'systemjs/dist/system.js',
+            'zone.js/dist/zone.js',
+            'reflect-metadata/Reflect.js',
             '@angular',
             'rxjs'
         ],
