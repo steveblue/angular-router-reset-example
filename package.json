@@ -25,8 +25,7 @@
         "ci": "npm run e2e && npm run test",
         "ci:watch": "npm run e2e && npm run test:watch",
         "start": "ngr --build dev --watch --serve",
-        "serve": "node server.js",
-        "postinstall": "npm run webdriver:update"
+        "serve": "node server.js"
     },
     "dependencies": {
         "@angular/animations": "4.4.2",
@@ -38,7 +37,6 @@
         "@angular/platform-browser-dynamic": "4.4.2",
         "@angular/platform-server": "4.4.2",
         "@angular/router": "4.4.2",
-        "angular": "git+https://github.com/angular/angular",
         "angular-in-memory-web-api": "~0.3.2",
         "compression": "^1.7.0",
         "core-js": "^2.4.1",

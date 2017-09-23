@@ -1,5 +1,5 @@
 import { Inject, Injectable, Injector } from '@angular/core';
-import { Router, Routes } from '@angular/router';
+import { Router, Routes, Route } from '@angular/router';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 
 import { Observable } from 'rxjs/Rx';
@@ -13,14 +13,14 @@ import { HomeComponent } from './shared/components/home/home.component';
 export class AppConfig {
 
 
-    constructor(private injector: Injector, 
+    constructor(private injector: Injector,
                 private http: Http) {
 
     }
 
     public load() {
 
-        console.warn('ROUTE CONFIG IS LOADING');
+        console.warn('NEW ROUTE CONFIG IS LOADING...');
 
         return new Promise((resolve, reject) => {
 
@@ -32,7 +32,7 @@ export class AppConfig {
                     { path: '', component: HomeComponent, children: routerConfig['routes'] }
                 ];
 
-                console.warn('INJECT ROUTES:', routes);
+                console.log('INJECTING NEW CONFIG VIA Injector.get(Router).resetConfig(routes):', routes);
 
                 this.injector.get(Router).resetConfig(routes);
 
