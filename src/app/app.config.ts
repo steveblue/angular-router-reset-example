@@ -12,11 +12,8 @@ import { HomeComponent } from './shared/components/home/home.component';
 @Injectable()
 export class AppConfig {
 
-
     constructor(private injector: Injector,
-                private http: Http) {
-
-    }
+                private http: Http) {}
 
     public load() {
 
@@ -29,8 +26,12 @@ export class AppConfig {
                 let routerConfig = res.json();
 
                 let routes: Routes = [
-                    { path: '', component: HomeComponent, children: routerConfig['routes'] }
+                    { path: '', component: HomeComponent, children: [] }
                 ];
+
+                routerConfig['routes'].forEach((route: Route) => { // TODO: Figure out if there is a better way to map the JSON to Route for ClosureCompiler annotation
+                    routes[0].children.push({ path: route['path'], loadChildren: route['loadChildren'] });
+                });
 
                 console.log('INJECTING NEW CONFIG VIA Injector.get(Router).resetConfig(routes):', routes);
 
